@@ -1,7 +1,27 @@
+@import "vendor/reset";
+@import "vars";
+
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+    line-height: 1.15;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #ccc;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: $black;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 @import "blocks/header";
+@import "blocks/container";
+@import "blocks/nav";
+@import "blocks/company";
+@import "blocks/achievements";
+@import "blocks/products";
 @import "blocks/footer";
