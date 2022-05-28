@@ -1,6 +1,12 @@
 .company {
+    margin-bottom: 20rem;
+
     &--apple {
         font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    }
+
+    &--microsoft {
+        font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
     }
 }
 
@@ -12,7 +18,14 @@
 
     a {
         color: inherit;
+        transition: text .2s linear;
         text-decoration: none;
+    }
+
+    &:hover {
+        a {
+            text-decoration: underline;
+        }
     }
 }
 
@@ -34,6 +47,10 @@
 
     &--apple {
         background-image: url(../img/apple/headquarters/headquarters4k.jpg);
+    }
+
+    &--microsoft {
+        background-image: url(../img/microsoft/headquarters/headquartersFullHd.jpg);
     }
 
     &:after {
@@ -62,9 +79,10 @@
 .company__main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3);
+    //grid-template-rows: repeat(3, .5fr);
     grid-column-gap: 0px;
     grid-row-gap: 4rem;
+    overflow: hidden;
 }
 
 .company__tagline {
@@ -92,13 +110,19 @@
 .company__leader-photo {
     grid-area: 1 / 2 / 4 / 3;
     margin-top: auto;
+}
 
-    img {
-        margin-bottom: -3px;
+.company__leader-img {
+    margin-bottom: -3px;
+
+    &--microsoft {
+        margin-bottom: -380px;
     }
 }
 
-
+.company__footer {
+    text-align: center;
+}
 
 
 
