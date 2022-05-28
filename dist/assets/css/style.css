@@ -319,7 +319,6 @@ img {
 
 .products__inner--apple {
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, auto);
 }
 
 .products__inner--apple .products__item:nth-child(1) {
@@ -360,10 +359,40 @@ img {
 
 .products__inner--microsoft {
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 25rem);
 }
 
 .products__inner--microsoft .products__item {
+    padding: 0;
     border-radius: 0;
+}
+
+.products__inner--microsoft .products__item:nth-child(1) {
+    grid-area: 1/1/3/5;
+}
+
+.products__inner--microsoft .products__item:nth-child(2) {
+    grid-area: 3/1/5/3;
+}
+
+.products__inner--microsoft .products__item:nth-child(3) {
+    grid-area: 3/3/4/4;
+}
+
+.products__inner--microsoft .products__item:nth-child(4) {
+    grid-area: 3/4/4/5;
+}
+
+.products__inner--microsoft .products__item:nth-child(5) {
+    grid-area: 4/3/5/4;
+}
+
+.products__inner--microsoft .products__item:nth-child(6) {
+    grid-area: 4/4/5/5;
+}
+
+.products__inner--microsoft .products__item:nth-child(7) {
+    grid-area: 5/1/7/5;
 }
 
 .products__item {
@@ -385,8 +414,9 @@ img {
 }
 
 .products__photo {
-    width: 80%;
+    max-width: 80%;
     text-align: center;
+    position: relative;
 }
 
 .products__photo img {
@@ -395,8 +425,16 @@ img {
     transition: transform 0.2s linear, -webkit-transform 0.2s linear;
 }
 
-.products__photo--airtag {
+.products__photo--full {
+    max-width: 100%;
+}
+
+.products__img--airtag {
     max-width: 35%;
+}
+
+.products__img--office {
+    max-width: 80%;
 }
 
 .footer {
