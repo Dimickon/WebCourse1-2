@@ -384,7 +384,6 @@ img {
     border-radius: 0;
 }
 
-<<<<<<< HEAD
 .products__inner--microsoft .products__item:nth-child(1) {
     grid-area: 1/1/3/5;
     background-image: url("../img/microsoft/products/windows.jpg");
@@ -414,8 +413,6 @@ img {
     grid-area: 5/1/7/5;
 }
 
-=======
->>>>>>> parent of 2067235 (finished with Microsoft)
 .products__item {
     background-color: #FFFFFF;
     background-position: center;
@@ -440,7 +437,6 @@ img {
     transition: transform 0.2s linear, -webkit-transform 0.2s linear;
 }
 
-<<<<<<< HEAD
 .products__photo--full {
     max-width: 100%;
 }
@@ -453,9 +449,6 @@ img {
 }
 
 .products__img--airtag {
-=======
-.products__photo--airtag {
->>>>>>> parent of 2067235 (finished with Microsoft)
     max-width: 35%;
 }
 
