@@ -16,6 +16,7 @@
 
     &--apple {
         grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, auto);
 
         .products__item {
             &:nth-child(1) {
@@ -62,7 +63,6 @@
         grid-template-columns: repeat(4, 1fr);
 
         .products__item {
-            padding: 0;
             border-radius: 0;
 
             &:nth-child(1) {
@@ -113,10 +113,8 @@
 }
 
 .products__photo {
-    max-width: 80%;
+    width: 80%;
     text-align: center;
-
-    position: relative;
 
     img {
         transition: transform .2s linear;
@@ -133,10 +131,6 @@
     height: auto;
     &--airtag {
         max-width: 35%;
-    }
-
-    &--office {
-        max-width: 80%;
     }
 }
 
