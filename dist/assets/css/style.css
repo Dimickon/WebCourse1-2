@@ -335,7 +335,6 @@ img {
 
 .products__inner--apple {
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, auto);
 }
 
 .products__inner--apple .products__item:nth-child(1) {
@@ -381,6 +380,7 @@ img {
 }
 
 .products__inner--microsoft .products__item {
+    padding: 0;
     border-radius: 0;
 }
 
@@ -427,8 +427,9 @@ img {
 }
 
 .products__photo {
-    width: 80%;
+    max-width: 80%;
     text-align: center;
+    position: relative;
 }
 
 .products__photo img {
@@ -450,6 +451,10 @@ img {
 
 .products__img--airtag {
     max-width: 35%;
+}
+
+.products__img--office {
+    max-width: 80%;
 }
 
 .footer {
