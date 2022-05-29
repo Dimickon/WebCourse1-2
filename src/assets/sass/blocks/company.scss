@@ -53,6 +53,10 @@
         background-image: url(../img/microsoft/headquarters/headquartersFullHd.jpg);
     }
 
+    &--aramco {
+        background-image: url(../img/aramco/headquarters/headquarters.jpg);
+    }
+
     &:after {
         content: "";
         display: block;
@@ -116,7 +120,7 @@
     margin-bottom: -3px;
 
     &--microsoft {
-        margin-bottom: -380px;
+        margin-bottom: -50%;
     }
 }
 

@@ -1,6 +1,12 @@
 @import "vendor/reset";
 @import "vars";
 
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
 html {
     box-sizing: border-box;
     font-size: 10px;
