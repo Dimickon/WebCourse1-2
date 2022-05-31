@@ -477,6 +477,49 @@ img {
     max-width: 80%;
 }
 
+.diagram {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    max-width: 800px;
+}
+
+.donut__item {
+    fill: none;
+    stroke-width: 10;
+}
+
+.donut__item:nth-child(1) {
+    stroke: #86cfa3;
+}
+
+.donut__item:nth-child(2) {
+    stroke: #FFFF00;
+}
+
+.donut__item:nth-child(3) {
+    stroke: red;
+}
+
+.donut__item:nth-child(4) {
+    stroke: blue;
+}
+
+.donut__item:nth-child(5) {
+    stroke: pink;
+}
+
+.donut__item:nth-child(6) {
+    stroke: black;
+}
+
+.donut__item:nth-child(7) {
+    stroke: green;
+}
+
 .footer {
     background-color: #444;
 }
