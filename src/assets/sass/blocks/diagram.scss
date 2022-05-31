@@ -37,3 +37,158 @@
         stroke: green;
     }
 }
+
+
+/*
+Гистограмма
+======================
+*/
+
+.chart {
+    margin: 0 auto;
+    position: relative;
+}
+
+.chart__legend {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.chart__legend-item {
+    margin-left: 3rem;
+}
+
+.chart__legend-company {
+    display: flex;
+    align-items: center;
+    span {
+        display: block;
+        margin-right: 1rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: $red;
+    }
+
+    &--apple {
+        span {
+            background-color: $appleColor;
+        }
+    }
+
+    &--microsoft {
+        span {
+            background-color: $windowsColor;
+        }
+    }
+
+    &--aramco {
+        span {
+            background-color: $aramcoColor;
+        }
+    }
+}
+
+.chart__content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.chart__points {
+    padding-top: 5.5rem;
+    padding-right: 1rem;
+    height: 60rem;
+}
+
+.chart__points-item {
+    margin: 35% 0 83%;
+}
+
+.chart__inner {
+    width: 80%;
+    height: 60rem;
+    border-left: thin solid $black;
+    border-bottom: thin solid $black;
+
+    position: relative;
+}
+
+.chart__lines {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.chart__lines-item {
+    width: 100%;
+    height: 1px;
+    margin-top: 9%;
+    background-color: $black;
+}
+
+.chart__bars {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+.chart__bars-item {
+    display: block;
+    margin: 0 3rem;
+    width: 7rem;
+    background-color: $red;
+    height: 30%;
+
+    transition: all 0.3s ease-in 0.55s;
+
+    &:nth-child(1) {
+        height: 82%;
+        background-color: $appleColor;
+    }
+
+    &:nth-child(2) {
+        height: 67%;
+        background-color: $windowsColor;
+    }
+
+    &:nth-child(3) {
+        height: 82.2%;
+        background-color: $aramcoColor;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
