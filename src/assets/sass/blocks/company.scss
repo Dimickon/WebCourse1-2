@@ -57,6 +57,14 @@
         background-image: url(../img/aramco/headquarters/headquarters.jpg);
     }
 
+    &--alphabet {
+        background-image: url(../img/alphabet/headquarters/headquarters4k.jpg);
+    }
+
+    &--tesla {
+        background-image: url(../img/tesla/headquarters/headquartersFullHd.jpg);
+    }
+
     &:after {
         content: "";
         display: block;

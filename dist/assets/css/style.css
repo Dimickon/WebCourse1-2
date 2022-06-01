@@ -53,6 +53,13 @@ table {
     border-spacing: 0;
 }
 
+@font-face {
+    font-family: "Gotham";
+  src: url("fonts/tesla/GothamRegular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 *,
 *:before,
 *:after {
@@ -63,6 +70,102 @@ html {
     box-sizing: border-box;
     font-size: 10px;
     line-height: 1.15;
+}
+
+@media (max-width: 108em) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 105em) {
+    html {
+        font-size: 8.75px;
+    }
+}
+
+@media (max-width: 91.5em) {
+    html {
+        font-size: 7.9px;
+    }
+}
+
+@media (max-width: 91em) {
+    html {
+        font-size: 8.4px;
+    }
+}
+
+@media (max-width: 90em) {
+    html {
+        font-size: 7.9px;
+    }
+}
+
+@media (max-width: 80em) {
+    html {
+        font-size: 7.2px;
+    }
+}
+
+@media (max-width: 72em) {
+    html {
+        font-size: 6.5px;
+    }
+}
+
+@media (max-width: 64em) {
+    html {
+        font-size: 5.5px;
+    }
+}
+
+@media (max-width: 48em) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 44em) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 38em) {
+    html {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 34em) {
+    html {
+        font-size: 7px;
+    }
+}
+
+@media (max-width: 30em) {
+    html {
+        font-size: 6px;
+    }
+}
+
+@media (max-width: 26em) {
+    html {
+        font-size: 5px;
+    }
+}
+
+@media (max-width: 22.5em) {
+    html {
+        font-size: 4.5px;
+    }
+}
+
+@media (max-width: 21em) {
+    html {
+        font-size: 4.4px;
+    }
 }
 
 body {
@@ -231,6 +334,14 @@ img {
 
 .company__headquarters--aramco {
     background-image: url(../img/aramco/headquarters/headquarters.jpg);
+}
+
+.company__headquarters--alphabet {
+    background-image: url(../img/alphabet/headquarters/headquarters4k.jpg);
+}
+
+.company__headquarters--tesla {
+    background-image: url(../img/tesla/headquarters/headquartersFullHd.jpg);
 }
 
 .company__headquarters:after {
@@ -424,6 +535,16 @@ img {
     grid-area: 2/1/3/3;
 }
 
+.products__inner--tesla {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 0.7fr);
+    font-family: "Gotham";
+}
+
+.products__inner--tesla .products__name {
+    margin-top: 6%;
+}
+
 .products__item {
     display: -ms-flexbox;
     display: flex;
@@ -435,6 +556,7 @@ img {
     overflow: hidden;
     background-color: #FFFFFF;
     border-radius: 20px;
+    position: relative;
 }
 
 .products__item--full {
@@ -444,6 +566,23 @@ img {
 .products__item:hover .products__photo img {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
+}
+
+.products__item:hover .products__name {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.products__name {
+    font-size: 4rem;
+    color: #1d1d1f;
+    font-weight: 700;
+    transition: -webkit-transform 0.2s linear;
+    transition: transform 0.2s linear;
+    transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+    position: absolute;
+    top: 0;
+    z-index: 2;
 }
 
 .products__photo {
@@ -482,6 +621,51 @@ img {
     text-align: center;
     font-size: 5.6rem;
     font-weight: 600;
+}
+
+.rating__menu {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 12rem;
+    position: relative;
+}
+
+.rating__menu:after {
+    position: absolute;
+    bottom: -2rem;
+    content: "";
+    display: block;
+    width: 100%;
+    background-color: #000;
+    height: 1px;
+    opacity: 1;
+}
+
+.rating__categories {
+    margin: 0 3.25rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1d1d1f;
+    text-decoration: none;
+}
+
+.rating__categories--active {
+    color: #C91301;
+    position: relative;
+}
+
+.rating__categories--active:after {
+    position: absolute;
+    z-index: 2;
+    bottom: -2rem;
+    content: "";
+    display: block;
+    width: 100%;
+    background-color: #C91301;
+    height: 2px;
+    opacity: 1;
 }
 
 .rating__subtitle {
