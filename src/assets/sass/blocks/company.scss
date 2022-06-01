@@ -9,18 +9,28 @@
         font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
     }
 
+    &--aramco {
+        font-family: Ghawar-Light,Helvetica,Arial,sans-serif;
+    }
+
 }
 
 .company__name {
     margin-bottom: 3rem;
     text-align: center;
     font-size: 5.6rem;
+    font-weight: 600;
+
 
 
     a {
         color: inherit;
         transition: text .2s linear;
         text-decoration: none;
+        svg {
+            width: 30rem;
+            height: auto;
+        }
     }
 
     &:hover {
@@ -137,8 +147,37 @@
     text-align: center;
 }
 
+.company__table {
+    margin-bottom: 14rem;
 
+    table {
+        margin: 0 auto;
+    }
 
+    thead {
+        border-bottom: 1px solid $black;
+    }
+
+    th {
+        padding: 2rem;
+        min-width: 20rem;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    td {
+        padding: 5rem 5rem 2rem;
+        border-bottom: 1px solid $black;
+        text-align: center;
+
+        &:nth-child(1) {
+            padding-left: 0;
+            text-align: left;
+            font-weight: 600;
+        }
+    }
+}
 
 
 
