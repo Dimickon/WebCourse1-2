@@ -114,9 +114,11 @@
         grid-template-rows: repeat(5, .7fr);
 
         font-family: 'Gotham';
+        font-weight: 500;
 
         .products__name {
             margin-top: 6%;
+            font-size: 5rem;
         }
     }
 
@@ -152,7 +154,6 @@
 }
 
 .products__name {
-    font-size: 4rem;
     color: $black;
     font-weight: 700;
 

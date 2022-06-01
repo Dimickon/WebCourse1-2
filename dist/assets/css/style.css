@@ -56,7 +56,21 @@ table {
 @font-face {
     font-family: "Gotham";
   src: url("fonts/tesla/GothamRegular.otf");
-  font-weight: normal;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: "Gotham";
+  src: url("fonts/tesla/GothamMedium.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: "Gotham";
+  src: url("fonts/tesla/GothamBold.otf");
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -539,10 +553,12 @@ img {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(5, 0.7fr);
     font-family: "Gotham";
+    font-weight: 500;
 }
 
 .products__inner--tesla .products__name {
     margin-top: 6%;
+    font-size: 5rem;
 }
 
 .products__item {
@@ -574,7 +590,6 @@ img {
 }
 
 .products__name {
-    font-size: 4rem;
     color: #1d1d1f;
     font-weight: 700;
     transition: -webkit-transform 0.2s linear;
