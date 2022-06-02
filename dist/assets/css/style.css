@@ -193,6 +193,15 @@ img {
     height: auto;
 }
 
+.header {
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
 .container {
     max-width: 140rem;
     margin: 0 auto;
@@ -295,6 +304,7 @@ img {
 
 .company {
     margin-bottom: 20rem;
+    overflow: hidden;
 }
 
 .company--apple {
@@ -307,6 +317,16 @@ img {
 
 .company--aramco {
     font-family: Ghawar-Light, Helvetica, Arial, sans-serif;
+}
+
+.company__video {
+    margin-bottom: 4rem;
+    width: 100%;
+}
+
+.company__videos {
+    width: 100%;
+    height: auto;
 }
 
 .company__name {

@@ -23,21 +23,24 @@ var path = {
         js: "dist/assets/js/",
         css: "dist/assets/css/",
         images: "dist/assets/img/",
-        fonts: "dist/assets/fonts/"
+        fonts: "dist/assets/fonts/",
+        videos: "dist/assets/videos/",
     },
     src: {
         html: "src/*.html",
         js: "src/assets/js/*.js",
         css: "src/assets/sass/style.scss",
         images: "src/assets/img/**/*.{jpg,png,svg,gif,ico}",
-        fonts: "src/assets/fonts/**/*.{eot,woff2,woff,ttf,otf}"
+        fonts: "src/assets/fonts/**/*.{eot,woff2,woff,ttf,otf}",
+        videos: "src/assets/videos/**/*.{mp4}"
     },
     watch: {
         html: "src/**/*.html",
         js: "src/assets/js/**/*.js",
         css: "src/assets/sass/**/*.scss",
         images: "src/assets/img/**/*.{jpg,png,svg,gif,ico}",
-        fonts: "src/assets/fonts/**/*.{eot,woff2,woff,ttf,otf}"
+        fonts: "src/assets/fonts/**/*.{eot,woff2,woff,ttf,otf}",
+        videos: "src/assets/videos/**/*.{mp4}",
     },
     clean: "./dist"
 }
@@ -122,6 +125,11 @@ function fonts() {
         .pipe(dest(path.build.fonts));
 }
 
+function videos() {
+    return src(path.src.videos)
+        .pipe(dest(path.build.videos));
+}
+
 function clean() {
     return del(path.clean);
 }
@@ -132,9 +140,10 @@ function watchFiles() {
     gulp.watch([path.watch.js], js);
     gulp.watch([path.watch.images], images);
     gulp.watch([path.watch.fonts], fonts);
+    gulp.watch([path.watch.videos], videos);
 }
 
-const build = gulp.series(clean, gulp.parallel(html, css, js, images, fonts));
+const build = gulp.series(clean, gulp.parallel(html, css, js, images, fonts, videos));
 const watch = gulp.parallel(build, watchFiles, browserSync);
 
 
@@ -145,6 +154,7 @@ exports.css = css;
 exports.js = js;
 exports.images = images;
 exports.fonts = fonts;
+exports.videos = videos;
 exports.clean = clean;
 exports.build = build;
 exports.watch = watch;
