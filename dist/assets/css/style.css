@@ -217,6 +217,7 @@ img {
 
 .nav__link {
     padding: 2rem 2.5rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: inherit;
     text-decoration: none;
@@ -226,6 +227,13 @@ img {
 .nav__link:hover {
     color: #FFFFFF;
     background-color: #c91301;
+}
+
+@media (max-width: 575px) {
+    .nav__link {
+        padding: 4rem 2.5rem;
+        font-size: 3rem;
+    }
 }
 
 .btn {
@@ -278,6 +286,11 @@ img {
 
 .btn:hover:before {
     width: 150%;
+}
+
+.intro {
+    margin-bottom: 8rem;
+    background-color: #e3ffe6;
 }
 
 .intro__inner {
@@ -416,10 +429,22 @@ img {
     overflow: hidden;
 }
 
+@media (max-width: 575px) {
+    .company__main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 .company__tagline {
     grid-area: 1/1/2/2;
     font-size: 5rem;
     font-weight: 700;
+}
+
+@media (max-width: 575px) {
+    .company__tagline {
+        grid-area: auto;
+    }
 }
 
 .company__leader-info {
@@ -439,6 +464,12 @@ img {
 .company__leader-photo {
     grid-area: 1/2/4/3;
     margin-top: auto;
+}
+
+@media (max-width: 575px) {
+    .company__leader-photo {
+        grid-area: auto;
+    }
 }
 
 .company__leader-img {
@@ -481,6 +512,13 @@ img {
     font-weight: 600;
 }
 
+@media (max-width: 575px) {
+    .company__table th {
+        padding: 0.5rem;
+        min-width: auto;
+    }
+}
+
 .company__table td {
     padding: 5rem 5rem 2rem;
     border-bottom: 1px solid #1d1d1f;
@@ -491,6 +529,13 @@ img {
     padding-left: 0;
     text-align: left;
     font-weight: 600;
+}
+
+@media (max-width: 575px) {
+    .company__table td {
+        padding: 5rem 0.5rem 2rem;
+        min-width: auto;
+    }
 }
 
 .achievements__categories {
@@ -530,8 +575,21 @@ img {
     grid-row: auto;
 }
 
+@media (max-width: 1280px) {
+    .products__inner {
+        grid-gap: 3rem;
+    }
+}
+
 .products__inner--apple {
     grid-template-columns: repeat(5, 1fr);
+}
+
+@media (max-width: 1280px) {
+    .products__inner--apple {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+    }
 }
 
 .products__inner--apple .products__item:nth-child(1) {
@@ -570,6 +628,13 @@ img {
     grid-area: 4/4/6/6;
 }
 
+@media (max-width: 575px) {
+    .products__inner--apple .products__item:nth-child(n) {
+        grid-area: auto;
+        padding: 3rem 0;
+    }
+}
+
 .products__inner--apple .products__photo {
     max-width: 80%;
 }
@@ -577,6 +642,13 @@ img {
 .products__inner--microsoft {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 25rem);
+}
+
+@media (max-width: 575px) {
+    .products__inner--microsoft {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
 }
 
 .products__inner--microsoft .products__item {
@@ -611,17 +683,43 @@ img {
     grid-area: 5/1/7/5;
 }
 
+@media (max-width: 575px) {
+    .products__inner--microsoft .products__item:nth-child(n) {
+        grid-area: auto;
+    }
+}
+
 .products__inner--aramco {
     grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 575px) {
+    .products__inner--aramco {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
 }
 
 .products__inner--aramco .products__item:nth-child(3) {
     grid-area: 2/1/3/3;
 }
 
+@media (max-width: 575px) {
+    .products__inner--aramco .products__item:nth-child(n) {
+        grid-area: auto;
+    }
+}
+
 .products__inner--alphabet {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
+}
+
+@media (max-width: 575px) {
+    .products__inner--alphabet {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
 }
 
 .products__inner--alphabet .products__item--pixelbook {
@@ -689,6 +787,13 @@ img {
     transform: scale(3);
 }
 
+@media (max-width: 575px) {
+    .products__item:hover .products__photo .products__img--applewatch {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+}
+
 .products__item:hover .products__name {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
@@ -739,12 +844,44 @@ img {
     transform: scale(2.5);
 }
 
+.products__img--winm {
+    display: none;
+}
+
 .products__img--office {
     max-width: 80%;
 }
 
 .products__img--c {
     max-width: 80%;
+}
+
+@media (max-width: 575px) {
+    .products__img--airtag {
+        max-width: 35%;
+    }
+
+    .products__img--applewatch {
+        max-width: 100%;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    .products__img--wallet {
+        max-width: 60%;
+    }
+
+    .products__img--tv {
+        max-width: 70%;
+    }
+
+    .products__img--wind {
+        display: none;
+    }
+
+    .products__img--winm {
+        display: block;
+    }
 }
 
 .rating__title {

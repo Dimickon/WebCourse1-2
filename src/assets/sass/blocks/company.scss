@@ -113,16 +113,24 @@
 .company__main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    //grid-template-rows: repeat(3, .5fr);
     grid-column-gap: 0px;
     grid-row-gap: 4rem;
     overflow: hidden;
+
+    @include breakpoint($mobile-bp) {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 .company__tagline {
     grid-area: 1 / 1 / 2 / 2;
     font-size: 5rem;
     font-weight: 700;
+
+
+    @include breakpoint($mobile-bp) {
+        grid-area: auto;
+    }
 }
 
 .company__leader-info {
@@ -144,6 +152,9 @@
 .company__leader-photo {
     grid-area: 1 / 2 / 4 / 3;
     margin-top: auto;
+    @include breakpoint($mobile-bp) {
+        grid-area: auto;
+    }
 }
 
 .company__leader-img {
@@ -182,6 +193,11 @@
         text-align: center;
         font-size: 2rem;
         font-weight: 600;
+
+        @include breakpoint($mobile-bp) {
+            padding: 0.5rem;
+            min-width: auto;
+        }
     }
 
     td {
@@ -193,6 +209,11 @@
             padding-left: 0;
             text-align: left;
             font-weight: 600;
+        }
+
+        @include breakpoint($mobile-bp) {
+            padding: 5rem .5rem 2rem;
+            min-width: auto;
         }
     }
 
