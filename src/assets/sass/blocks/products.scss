@@ -109,6 +109,38 @@
 
     }
 
+    &--alphabet {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
+        .products__item {
+            &--pixelbook {
+                background-color: #F7DAD8;
+            }
+
+            &--pixelbuds {
+                background-color: #FCE3DA;
+            }
+
+            &--pixelwatch {
+                padding: 3rem;
+                background-color: #F1D6B8;
+                img {
+                    max-width: 70%;
+                }
+            }
+
+            &--nest {
+                background-color: #FBACBE;
+            }
+
+            &--stadia {
+                background-color: #98C1D9;
+            }
+        }
+
+    }
+
     &--tesla {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(5, .7fr);
@@ -142,14 +174,19 @@
 
     &:hover {
         .products__photo {
-            img {
+            .products__img {
                 transform: scale(1.05);
+
+                &--applewatch {
+                    transform: scale(3);
+                }
             }
         }
 
         .products__name {
             transform: scale(1.05);
         }
+
     }
 }
 
@@ -190,7 +227,16 @@
         max-width: 35%;
     }
 
+    &--applewatch {
+        max-width: 100%;
+        transform: scale(2.5);
+    }
+
     &--office {
+        max-width: 80%;
+    }
+
+    &--c {
         max-width: 80%;
     }
 }
