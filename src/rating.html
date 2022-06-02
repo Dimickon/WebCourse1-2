@@ -5,73 +5,27 @@ title: Рейтинг компаний
 
 <section class="rating">
     <div class="container">
+        <div class="rating__about">
+            <p class="rating__text"><span>Рыночная капитализация</span> — стоимость объекта, рассчитанная на основе текущей рыночной цены. Этот финансовый показатель используют для оценки совокупной стоимости рыночных инструментов, субъектов и рынков.</p>
+            <p class="rating__text"><span>Чистая прибыль</span> — часть балансовой прибыли предприятия, остающаяся в его распоряжении после уплаты налогов, сборов, отчислений и других обязательных платежей в бюджет.</p>
+        </div>
         <div class="rating__inner">
             <h1 class="rating__title">Рейтинг компаний</h1>
             <div class="rating__menu">
-                <a class="rating__categories rating__categories--active" href="#">Капитализация</a>
-                <a class="rating__categories" href="#">Чистая прибыль</a>
+                <a class="rating__categories" href="#diagram-1">Капитализация</a>
+                <a class="rating__categories" href="#diagram-2">Чистая прибыль</a>
             </div>
-
-
-
-
-            <div class="diagram">
-                <svg class="donut" width="500" height="500" viewBox="0 0 50 50">
-                    <circle class="donut__item" r="15.9" cx="50%" cy="50%"></circle>
-                    <circle class="donut__item" r="15.9" cx="50%" cy="50%"></circle>
-                    <circle class="donut__item" r="15.9" cx="50%" cy="50%"></circle>
-                    <circle class="donut__item" r="15.9" cx="50%" cy="50%"></circle>
-                    <circle class="donut__item" r="15.9" cx="50%" cy="50%"></circle>
-                    <circle class="donut__item" r="15.9" cx="50%" cy="50%"></circle>
-                    <circle class="donut__item" r="15.9" cx="50%" cy="50%"></circle>
-                  </svg>
-            </div>
-
-            <h2 class="rating__subtitle">Гистограмма капитализации</h2>
             <div class="rating__content">
+                <div id="diagram-1" class="rating__diagram">
+                    <img src="assets/img/giagram/diagram1.svg" alt="diagram">
+                </div>
+                <div id="diagram-2" class="rating__diagram">
+                    <img src="assets/img/giagram/diagram2.svg" alt="diagram">
+                </div>
+            </div>
 
-            </div>
-            <div class="chart">
-                <div class="chart__legend">
-                    <div class="chart__legend-item">
-                        <div class="chart__legend-company chart__legend-company--apple"><span></span>Apple</div>
-                    </div>
-                    <div class="chart__legend-item">
-                        <div class="chart__legend-company chart__legend-company--microsoft"><span></span>Microsoft</div>
-                    </div>
-                    <div class="chart__legend-item">
-                        <div class="chart__legend-company chart__legend-company--aramco"><span></span>Saudi Aramco</div>
-                    </div>
-                    <div class="chart__legend-item">
-                        <div class="chart__legend-company"><span></span>Apple</div>
-                    </div>
-                </div>
-                <div class="chart__content">
-                    <div class="chart__points">
-                        <div class="chart__points-item">2.5$ trillion</div>
-                        <div class="chart__points-item">2$ trillion</div>
-                        <div class="chart__points-item">1.5$ trillion</div>
-                        <div class="chart__points-item">1$ trillion</div>
-                        <div class="chart__points-item">0.5$ trillion</div>
-                    </div>
-                    <div class="chart__inner">
-                        <div class="chart__lines">
-                            <div class="chart__lines-item"></div>
-                            <div class="chart__lines-item"></div>
-                            <div class="chart__lines-item"></div>
-                            <div class="chart__lines-item"></div>
-                            <div class="chart__lines-item"></div>
-                        </div>
-                        <div class="chart__bars">
-                            <div class="chart__bars-item"></div>
-                            <div class="chart__bars-item"></div>
-                            <div class="chart__bars-item"></div>
-                            <div class="chart__bars-item"></div>
-                            <div class="chart__bars-item"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+
         </div>
     </div>
 </section>

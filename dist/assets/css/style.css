@@ -188,6 +188,15 @@ body {
     color: #1d1d1f;
 }
 
+.page {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
 img {
     width: 100%;
     height: auto;
@@ -884,7 +893,25 @@ img {
     }
 }
 
+.rating {
+    padding: 10rem 0;
+}
+
+.rating__about {
+    margin-bottom: 10rem;
+}
+
+.rating__text {
+    margin-top: 4rem;
+    font-size: 3rem;
+}
+
+.rating__text span {
+    font-weight: 600;
+}
+
 .rating__title {
+    margin-bottom: 3rem;
     text-align: center;
     font-size: 5.6rem;
     font-weight: 600;
@@ -939,6 +966,22 @@ img {
     text-align: center;
     font-size: 2.8rem;
     font-weight: 400;
+}
+
+.rating__diagram {
+    display: none;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.rating__diagram--active {
+    display: block;
+}
+
+@media (max-width: 575px) {
+    .rating__diagram {
+        max-width: 100%;
+    }
 }
 
 .diagram {
@@ -1111,7 +1154,7 @@ img {
 }
 
 .footer {
-    margin-top: 10rem;
+    margin-top: auto;
     background-color: #444;
-    padding: 100rem 0;
+    padding: 2rem 0;
 }

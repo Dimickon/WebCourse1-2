@@ -117,6 +117,13 @@ body {
     color: $black;
 }
 
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
 img {
     width: 100%;
     height: auto;
