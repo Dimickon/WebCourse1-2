@@ -445,6 +445,14 @@ img {
     border-bottom: 1px solid #1d1d1f;
 }
 
+.company__table tr {
+    transition: background 0.2s linear;
+}
+
+.company__table tr:hover {
+    background-color: rgba(29, 29, 31, 0.05);
+}
+
 .company__table th {
     padding: 2rem;
     min-width: 20rem;

@@ -158,6 +158,13 @@
         border-bottom: 1px solid $black;
     }
 
+    tr {
+        transition: background .2s linear;
+        &:hover {
+            background-color: rgba($black, .05);
+        }
+    }
+
     th {
         padding: 2rem;
         min-width: 20rem;
@@ -177,6 +184,7 @@
             font-weight: 600;
         }
     }
+
 }
 
 
