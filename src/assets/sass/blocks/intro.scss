@@ -1,6 +1,10 @@
 .intro {
     margin-bottom: 8rem;
+    overflow: hidden;
     background-color: #e3ffe6;
+
+    position: relative;
+    z-index: -2
 }
 
 .intro__inner {
@@ -21,4 +25,13 @@
     font-weight: 400;
     line-height: 1.10722;
     letter-spacing: .004em;
+}
+
+.intro__logo {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    transform: translateX(25%) translateY(25%);
 }

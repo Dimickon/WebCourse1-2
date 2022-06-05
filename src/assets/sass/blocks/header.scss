@@ -5,6 +5,12 @@
     left: 0;
     right: 0;
     z-index: 1000;
+
+    transition: box-shadow .2s linear;
+
+    &--dark {
+        //box-shadow: 0 10px 25px rgb(72 72 72 / 15%);
+    }
 }
 
 .header__inner {
