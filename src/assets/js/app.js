@@ -9,9 +9,16 @@ $(document).ready(function() {
     =====================================*/
 
     headerScroll();
+    headerNoneForVideo();
 
     $(window).on("scroll  resize", function() {
-        headerScroll();
+        if (window.location.pathname == '/index.html') {
+            headerScroll();
+        }
+
+        else {
+            headerNoneForVideo();
+        }
     });
 
     function headerScroll() {
@@ -24,6 +31,22 @@ $(document).ready(function() {
             header.addClass("header--dark");
         } else {
             header.removeClass("header--dark");
+        }
+    }
+
+    function headerNoneForVideo() {
+        let video = $('#company__video');
+        let videoH = video.innerHeight();
+        let scrollTop = $(this).scrollTop();
+        console.log(videoH);
+        if (scrollTop < videoH) {
+            header.addClass("header--none");
+            header.toggleClass("header--dark");
+        }
+
+        else {
+            header.removeClass("header--none");
+            header.addClass("header--dark");
         }
     }
 
