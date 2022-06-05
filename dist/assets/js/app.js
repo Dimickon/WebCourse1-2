@@ -1,6 +1,7 @@
 $(document).ready(function() {
     let intro = $("#intro");
     let header = $('#header');
+    let video = $('#company__video');
     let introH = intro.innerHeight();
     let headerH = header.innerHeight();
     let scrollTop = $(window).scrollTop();
@@ -12,12 +13,14 @@ $(document).ready(function() {
     headerNoneForVideo();
 
     $(window).on("scroll  resize", function() {
-        if (window.location.pathname == '/index.html') {
-            headerScroll();
+        if ((video).length) {
+            console.log('1');
+            headerNoneForVideo();
         }
 
         else {
-            headerNoneForVideo();
+            console.log('0');
+            headerScroll();
         }
     });
 
@@ -38,10 +41,9 @@ $(document).ready(function() {
         let video = $('#company__video');
         let videoH = video.innerHeight();
         let scrollTop = $(this).scrollTop();
-        console.log(videoH);
         if (scrollTop < videoH) {
             header.addClass("header--none");
-            header.toggleClass("header--dark");
+            header.removeClass("header--dark");
         }
 
         else {

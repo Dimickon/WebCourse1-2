@@ -231,6 +231,10 @@ img {
     display: none;
 }
 
+.header--dark {
+    box-shadow: 0 10px 25px rgba(72, 72, 72, 0.15);
+}
+
 .header__inner {
     display: -ms-flexbox;
     display: flex;
@@ -395,14 +399,14 @@ img {
 }
 
 .company__video {
-    margin-bottom: 4rem;
+    margin-bottom: 17rem;
     width: 100%;
     height: 100vh;
 }
 
 .company__videos {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .company__name {
