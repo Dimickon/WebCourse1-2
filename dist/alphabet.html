@@ -18,6 +18,21 @@
 </head>
 <body>
     <div class="page">
+        <svg style="display: none;">
+        
+            <symbol id="vk" viewBox="0 0 24 24">
+                <g clip-path="url(#clip0_619_4)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M23.45 5.948C23.616 5.402 23.45 5 22.655 5H20.03C19.362 5 19.054 5.347 18.887 5.73C18.887 5.73 17.552 8.926 15.661 11.002C15.049 11.604 14.771 11.795 14.437 11.795C14.27 11.795 14.019 11.604 14.019 11.057V5.948C14.019 5.292 13.835 5 13.279 5H9.151C8.734 5 8.483 5.304 8.483 5.593C8.483 6.214 9.429 6.358 9.526 8.106V11.904C9.526 12.737 9.373 12.888 9.039 12.888C8.149 12.888 5.984 9.677 4.699 6.003C4.45 5.288 4.198 5 3.527 5H0.9C0.15 5 0 5.347 0 5.73C0 6.412 0.89 9.8 4.145 14.281C6.315 17.341 9.37 19 12.153 19C13.822 19 14.028 18.632 14.028 17.997V15.684C14.028 14.947 14.186 14.8 14.715 14.8C15.105 14.8 15.772 14.992 17.33 16.467C19.11 18.216 19.403 19 20.405 19H23.03C23.78 19 24.156 18.632 23.94 17.904C23.702 17.18 22.852 16.129 21.725 14.882C21.113 14.172 20.195 13.407 19.916 13.024C19.527 12.533 19.638 12.314 19.916 11.877C19.916 11.877 23.116 7.451 23.449 5.948H23.45Z"/>
+                </g>
+            </symbol>
+        
+            <symbol id="github" viewBox="0 0 24 24">
+                <g>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12C0 17.31 3.435 21.795 8.205 23.385C8.805 23.49 9.03 23.13 9.03 22.815C9.03 22.53 9.015 21.585 9.015 20.58C6 21.135 5.22 19.845 4.98 19.17C4.845 18.825 4.26 17.76 3.75 17.475C3.33 17.25 2.73 16.695 3.735 16.68C4.68 16.665 5.355 17.55 5.58 17.91C6.66 19.725 8.385 19.215 9.075 18.9C9.18 18.12 9.495 17.595 9.84 17.295C7.17 16.995 4.38 15.96 4.38 11.37C4.38 10.065 4.845 8.985 5.61 8.145C5.49 7.845 5.07 6.615 5.73 4.965C5.73 4.965 6.735 4.65 9.03 6.195C9.99 5.925 11.01 5.79 12.03 5.79C13.05 5.79 14.07 5.925 15.03 6.195C17.325 4.635 18.33 4.965 18.33 4.965C18.99 6.615 18.57 7.845 18.45 8.145C19.215 8.985 19.68 10.05 19.68 11.37C19.68 15.975 16.875 16.995 14.205 17.295C14.64 17.67 15.015 18.39 15.015 19.515C15.015 21.12 15 22.41 15 22.815C15 23.13 15.225 23.505 15.825 23.385C18.2072 22.5807 20.2772 21.0497 21.7437 19.0074C23.2101 16.965 23.9993 14.5143 24 12C24 5.37 18.63 0 12 0Z"/>
+                </g>
+            </symbol>
+        
+        </svg>
         <header id="header" class="header">
             <div class="container">
                 <div class="header__inner">
@@ -98,6 +113,11 @@
                         <h4 class="achievements__categories">Финансовые показатели</h4>
         
                         <div class="achievements__item">
+                            <div class="achievements__item-value">4 место</div>
+                            <div class="achievements__item-caption">По капитализации</div>
+                        </div>
+        
+                        <div class="achievements__item">
                             <div class="achievements__item-value">$1.532 трлн.</div>
                             <div class="achievements__item-caption">Капитализация</div>
                         </div>
@@ -107,20 +127,15 @@
                             <div class="achievements__item-caption">Чистая прибыль</div>
                         </div>
         
-                        <div class="achievements__item">
-                            <div class="achievements__item-value">4 место</div>
-                            <div class="achievements__item-caption">По капитализации</div>
-                        </div>
-        
                     </div>
         
                     <p class="company__leader-info"><span>Sundar Pichai</span><br>Генеральный директор</p>
                     <div class="company__leader-photo">
-                        <img class="company__leader-img" src="assets/img/alphabet/leader.png" alt="Satya Narayana Nadella">
+                        <img class="company__leader-img" src="assets/img/alphabet/leader.png" alt="Sundar Pichai">
                     </div>
                 </div>
             </div>
-            <div class="products products--aramco">
+            <div class="products">
                 <div class="container">
                     <h2 class="products__title">Продукты</h2>
                     <div class="products__inner products__inner--alphabet">
@@ -164,9 +179,23 @@
 
         <footer class="footer">
             <div class="container">
-                <h2 class="footer__stat">Статистика:</h2>
-                <p class="footer__text">Время разработки сайта: 6 дней</p>
-                <p class="footer__text">Количество страниц: 7 страниц</p>
+                <div class="footer__inner">
+                    <div class="footer__stat">
+                        <h2 class="footer__categories">Статистика:</h2>
+                        <p class="footer__text">Количество страниц: 7 страниц</p>
+                    </div>
+                    <div class="footer__info">
+                        <ul class="footer__media">
+                            <li class="footer__media-item">
+                                <a href="https://vk.com/dimickon"><svg class="footer__icon"><use xlink:href="#vk"></use></svg></a>
+                            </li>
+                            <li class="footer__media-item">
+                                <a href="https://github.com/Dimickon"><svg class="footer__icon"><use xlink:href="#github"></use></svg></a>
+                            </li>
+                        </ul>
+                        <time class="footer__data" datetime="2022-06-11">2022</time>
+                    </div>
+                </div>
             </div>
         </footer>
     </div>
