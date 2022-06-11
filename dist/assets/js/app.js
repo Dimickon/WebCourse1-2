@@ -13,15 +13,7 @@ $(document).ready(function() {
     headerNoneForVideo();
 
     $(window).on("scroll  resize", function() {
-        if ((video).length) {
-            console.log('1');
-            headerNoneForVideo();
-        }
-
-        else {
-            console.log('0');
-            headerScroll();
-        }
+        headerNoneForVideo();
     });
 
     function headerScroll() {
@@ -30,26 +22,42 @@ $(document).ready(function() {
 
         let scrollTop = $(this).scrollTop();
 
-        if( scrollTop >= (introH - headerH) ) {
-            header.addClass("header--dark");
-        } else {
-            header.removeClass("header--dark");
+        if ((intro).length) {
+            console.log((intro).length)
+            if( scrollTop >= (introH - headerH) ) {
+                header.addClass("header--dark");
+            } else {
+                header.removeClass("header--dark");
+            }
         }
+
+        else {
+            header.addClass("header--dark");
+        }
+
     }
 
     function headerNoneForVideo() {
         let video = $('#company__video');
         let videoH = video.innerHeight();
         let scrollTop = $(this).scrollTop();
-        if (scrollTop < videoH) {
-            header.addClass("header--none");
-            header.removeClass("header--dark");
+
+        if ((video).length) {
+            if (scrollTop < videoH) {
+                header.addClass("header--none");
+                header.removeClass("header--dark");
+            }
+
+            else {
+                header.removeClass("header--none");
+                header.addClass("header--dark");
+            }
         }
 
         else {
-            header.removeClass("header--none");
-            header.addClass("header--dark");
+            headerScroll();
         }
+
     }
 
     /* Categories
