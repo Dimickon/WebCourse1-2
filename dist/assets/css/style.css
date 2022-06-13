@@ -448,11 +448,11 @@ img {
 }
 
 .company__headquarters--apple {
-    background-image: url(../img/apple/headquarters/headquarters4k.jpg);
+    background-image: url(../img/apple/headquarters/headquarters.jpg);
 }
 
 .company__headquarters--microsoft {
-    background-image: url(../img/microsoft/headquarters/headquartersFullHd.jpg);
+    background-image: url(../img/microsoft/headquarters/headquarters.jpg);
 }
 
 .company__headquarters--aramco {
@@ -460,11 +460,11 @@ img {
 }
 
 .company__headquarters--alphabet {
-    background-image: url(../img/alphabet/headquarters/headquarters4k.jpg);
+    background-image: url(../img/alphabet/headquarters/headquarters.jpg);
 }
 
 .company__headquarters--tesla {
-    background-image: url(../img/tesla/headquarters/headquartersFullHd.jpg);
+    background-image: url(../img/tesla/headquarters/headquarters.jpg);
 }
 
 .company__headquarters:after {

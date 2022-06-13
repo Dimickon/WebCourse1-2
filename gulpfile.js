@@ -24,7 +24,7 @@ var path = {
         css: "dist/assets/css/",
         images: "dist/assets/img/",
         fonts: "dist/assets/fonts/",
-        videos: "dist/assets/videos/",
+        videos: "dist/assets/videos/"
     },
     src: {
         html: "src/*.html",
@@ -32,7 +32,7 @@ var path = {
         css: "src/assets/sass/style.scss",
         images: "src/assets/img/**/*.{jpg,png,svg,gif,ico}",
         fonts: "src/assets/fonts/**/*.{eot,woff2,woff,ttf,otf}",
-        videos: "src/assets/videos/**/*.{mp4}"
+        videos: "src/assets/videos/*.{mp4}"
     },
     watch: {
         html: "src/**/*.html",
@@ -40,7 +40,7 @@ var path = {
         css: "src/assets/sass/**/*.scss",
         images: "src/assets/img/**/*.{jpg,png,svg,gif,ico}",
         fonts: "src/assets/fonts/**/*.{eot,woff2,woff,ttf,otf}",
-        videos: "src/assets/videos/**/*.{mp4}",
+        videos: "src/assets/videos/**/*.{mp4}"
     },
     clean: "./dist"
 }
