@@ -15,14 +15,14 @@
     grid-gap: 1rem;
     grid-row: auto;
 
-    @include breakpoint($medium-bp) {
+    @include breakpoint($mobile-bp) {
         grid-gap: 3rem;
     }
 
     &--apple {
         grid-template-columns: repeat(5, 1fr);
 
-        @include breakpoint($medium-bp) {
+        @include breakpoint($mobile-bp) {
             grid-template-columns: repeat(1, 1fr);
             grid-template-rows: auto;
         }

@@ -196,6 +196,11 @@ body {
     overflow: hidden;
 }
 
+a,
+a:hover {
+    text-decoration: none;
+}
+
 img {
     width: 100%;
     height: auto;
@@ -260,7 +265,7 @@ img {
     padding: 0 1rem;
 }
 
-.nav {
+.nav__list {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
@@ -268,12 +273,25 @@ img {
 }
 
 .nav__link {
-    padding: 2.5rem 2.5rem;
+    color: #1d1d1f;
     font-size: 2.5rem;
+    transition: color 0.2s linear, background 0.2s linear;
+}
+
+.nav__link a {
+    display: block;
+    padding: 2.5rem 2.5rem;
     font-weight: 700;
     color: inherit;
-    text-decoration: none;
-    transition: color 0.2s linear, background 0.2s linear;
+}
+
+.nav__link-has-children {
+    position: relative;
+    display: inline-block;
+}
+
+.nav__link-has-children:hover .nav__list-sub {
+    display: block;
 }
 
 .nav__link:hover {
@@ -286,6 +304,20 @@ img {
         padding: 4rem 2.5rem;
         font-size: 3rem;
     }
+}
+
+.nav__list-sub {
+    display: none;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    background-color: #FFFFFF;
+    position: absolute;
+    z-index: 1;
+}
+
+.nav__list-sub--dark {
+    box-shadow: 0 10px 25px rgba(72, 72, 72, 0.15);
 }
 
 .btn {
@@ -495,7 +527,7 @@ img {
     overflow: hidden;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 771px) {
     .company__main {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -507,7 +539,7 @@ img {
     font-weight: 700;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 771px) {
     .company__tagline {
         grid-area: auto;
     }
@@ -532,7 +564,7 @@ img {
     margin-top: auto;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 771px) {
     .company__leader-photo {
         grid-area: auto;
     }
@@ -641,7 +673,7 @@ img {
     grid-row: auto;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 575px) {
     .products__inner {
         grid-gap: 3rem;
     }
@@ -651,7 +683,7 @@ img {
     grid-template-columns: repeat(5, 1fr);
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 575px) {
     .products__inner--apple {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: auto;

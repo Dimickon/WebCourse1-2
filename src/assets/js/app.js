@@ -1,6 +1,7 @@
 $(document).ready(function() {
     let intro = $("#intro");
     let header = $('#header');
+    let subMenu = $('.nav__list-sub');
     let video = $('#company__video');
     let introH = intro.innerHeight();
     let headerH = header.innerHeight();
@@ -26,13 +27,16 @@ $(document).ready(function() {
             console.log((intro).length)
             if( scrollTop >= (introH - headerH) ) {
                 header.addClass("header--dark");
+                subMenu.addClass("nav__list-sub--dark");
             } else {
                 header.removeClass("header--dark");
+                subMenu.removeClass("nav__list-sub--dark");
             }
         }
 
         else {
             header.addClass("header--dark");
+            subMenu.addClass("nav__list-sub--dark");
         }
 
     }

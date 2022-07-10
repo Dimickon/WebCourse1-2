@@ -1,17 +1,31 @@
-.nav {
+.nav__list {
     display: flex;
     justify-content: center;
 }
 
 .nav__link {
-    padding: 2.5rem 2.5rem;
-
+    color: $black;
     font-size: 2.5rem;
-    font-weight: 700;
-    color: inherit;
-    text-decoration: none;
 
     transition: color .2s linear, background .2s linear;
+
+    a {
+        display: block;
+        padding: 2.5rem 2.5rem;
+        font-weight: 700;
+        color: inherit;
+    }
+
+    &-has-children {
+        position: relative;
+        display: inline-block;
+
+        &:hover {
+            .nav__list-sub {
+                display: block;
+            }
+        }
+    }
 
     &:hover {
         color: $white;
@@ -21,5 +35,19 @@
     @include breakpoint($mobile-bp) {
         padding: 4rem 2.5rem;
         font-size: 3rem;
+    }
+}
+
+.nav__list-sub {
+    display: none;
+    width: max-content;
+    background-color: $white;
+
+    position: absolute;
+    z-index: 1;
+
+
+    &--dark {
+        box-shadow: 0 10px 25px rgb(72 72 72 / 15%);
     }
 }
